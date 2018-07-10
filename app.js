@@ -4,6 +4,11 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let indexRouter = require('./routes/index');
+let dataRouter = require('./routes/data');
+let config = require('./config');
+let mongod = require('mongo');
+let mongoose = require('mongoose');
+
 let app = express();
 
 app.use(logger('dev'));
@@ -11,7 +16,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+//API Endpoints
 app.use('/', indexRouter);
+app.use('/data', dataRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
