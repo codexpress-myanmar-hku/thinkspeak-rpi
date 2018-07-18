@@ -1,0 +1,18 @@
+.row{
+    margin-top: 100px;
+}
+
+h1{
+    padding-bottom: 50px;
+    font-weight: 900;
+}
+
+h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+h3{
+    font-weight: 200;
+}
