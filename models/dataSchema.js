@@ -9,7 +9,7 @@ let dataSchema = new mongoose.Schema({
     input_current: {type: Number, required: false},
     input_voltage: {type: Number, required: false},
     rssi: {type: Number, required: false},
-    sw: {type: Boolean, required: true},
+    sw: {type: Boolean },
     timestamp: {type: Date, required: true}
 });
 
