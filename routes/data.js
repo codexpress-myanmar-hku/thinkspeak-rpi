@@ -5,7 +5,7 @@ let dataModel = require('../models/dataSchema');
 router.post('/', (req, res, next) =>{
 
     let payload = req.body;
-    console.log(req.body);
+    console.log("INCOMING DATA ENTRY: " + req.body);
     dataModel.local.create({
         soil_temp: payload.soil_temp,
         soil_moist: payload.soil_moist,
