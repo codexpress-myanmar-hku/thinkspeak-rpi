@@ -44,7 +44,6 @@ router.post('/', (req, res, next) =>{
         }
     });
 
-    console.log("Here");
     res.status(200);
     res.send("Done. Check logs for details.");
 
